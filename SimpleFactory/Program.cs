@@ -6,7 +6,10 @@ namespace SimpleFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Phone phone;
+            SimpleFactory factory = new SimpleFactory("IPhoneX");
+            phone = factory.CreatePhone();
+            phone.Call();
         }
     }
 }
