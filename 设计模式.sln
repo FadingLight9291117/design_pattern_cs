@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{87870830-0999-4A8D-86AC-24E6DFEA4EC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{0022E976-A813-4D21-8D03-59AEC8CAFF5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{0022E976-A813-4D21-8D03-59AEC8CAFF5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{D767CB09-F7AC-40BC-8DEE-46137F4CAF34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{D767CB09-F7AC-40BC-8DEE-46137F4CAF34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{43B863D3-19D2-4A09-A387-B482206A6FFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{D767CB09-F7AC-40BC-8DEE-46137F4CAF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D767CB09-F7AC-40BC-8DEE-46137F4CAF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D767CB09-F7AC-40BC-8DEE-46137F4CAF34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B863D3-19D2-4A09-A387-B482206A6FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B863D3-19D2-4A09-A387-B482206A6FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B863D3-19D2-4A09-A387-B482206A6FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B863D3-19D2-4A09-A387-B482206A6FFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
