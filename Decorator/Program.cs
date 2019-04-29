@@ -10,7 +10,7 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            InterfaceIcecream icecream = new Icecream("冰淇淋");
+            Iicecream icecream = new Icecream("冰淇淋");
             Almond almond = new Almond();
             Raisin raisin = new Raisin();
             almond.Decorate(raisin);

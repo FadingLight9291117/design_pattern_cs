@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    interface InterfaceIcecream
+    interface Iicecream
     {
         void show();
     }
 
-    class Icecream : InterfaceIcecream
+    class Icecream : Iicecream
     {
         private string name;
         public Icecream(string name)
@@ -23,10 +23,10 @@ namespace Decorator
             Console.WriteLine("的{0}", name);
         }
     }
-    abstract class AbstractIcecreamDecorator : InterfaceIcecream
+    abstract class Decorator : Iicecream
     {
-        protected InterfaceIcecream component;
-        public void Decorate(InterfaceIcecream component)
+        protected Iicecream component;
+        public void Decorate(Iicecream component)
         {
             this.component = component;
         }
@@ -34,7 +34,7 @@ namespace Decorator
         
     }
 
-    class OreoCookies : AbstractIcecreamDecorator
+    class OreoCookies : Decorator
     {
         public override void show()
         {
@@ -42,7 +42,7 @@ namespace Decorator
             component.show();
         }
     }
-    class Almond : AbstractIcecreamDecorator
+    class Almond : Decorator
     {
         public override void show()
         {
@@ -51,7 +51,7 @@ namespace Decorator
             
         }
     }
-    class Casthews : AbstractIcecreamDecorator
+    class Casthews : Decorator
     {
         public override void show()
         {
@@ -59,7 +59,7 @@ namespace Decorator
             component.show();
         }
     }
-    class Pecan : AbstractIcecreamDecorator
+    class Pecan : Decorator
     {
         public override void show()
         {
@@ -67,7 +67,7 @@ namespace Decorator
             component.show();
         }
     }
-    class Raisin:AbstractIcecreamDecorator
+    class Raisin:Decorator
     {
         public override void show()
         {
@@ -75,7 +75,7 @@ namespace Decorator
             component.show();
         }
     }
-    class ChocolateChip:AbstractIcecreamDecorator
+    class ChocolateChip:Decorator
     {
         public override void show()
         {
@@ -83,7 +83,7 @@ namespace Decorator
             component.show();
         }
     }
-    class Strawberry:AbstractIcecreamDecorator
+    class Strawberry:Decorator
     {
         public override void show()
         {

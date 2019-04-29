@@ -2,7 +2,7 @@
 
 namespace Factory
 {
-    class Factory
+    abstract class Factory
     {
         protected Product product;
         public Product getLaptop() { return product; }

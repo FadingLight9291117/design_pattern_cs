@@ -1,16 +1,16 @@
 ﻿
 namespace Factory
 {
-    class Product
+    abstract class Product
     {
         protected string LaptopName;
         public string getLaptop()
         {
-            return "这是"+LaptopName+"的电脑";
+            return "这是" + LaptopName + "的电脑";
         }
     }
 
-    class HPProduct:Product
+    class HPProduct : Product
     {
         public HPProduct()
         {
